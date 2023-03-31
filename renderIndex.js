@@ -1,7 +1,7 @@
+import fs from 'fs'
+
 import summaries from './summaries.js';
 import render from './view/render.js';
-import fs from 'fs'
-import dateString from './helpers/dateString.js';
 
 export default async function renderIndex(){
     const trendSummaries = await summaries()
@@ -12,7 +12,7 @@ export default async function renderIndex(){
     const date = new Date()
     const index = await render("./view/index.html",{
         trends:trendRenders.join("\n"),
-        update_date: dateString()
+        update_date: new Date().toLocaleString("tr-TR", {timeZone: "Turkey"})
     })
     let now = Date.now()
     fs.writeFileSync("./public/index.html",index)
