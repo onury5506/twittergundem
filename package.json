@@ -1,5 +1,5 @@
 {
-  "name": "twittergundem_backend",
+  "name": "twittergundem",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Onur YILDIZ",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.22"
