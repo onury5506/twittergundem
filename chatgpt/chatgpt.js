@@ -7,7 +7,7 @@ export const chatGPT = {
 chatGPT.sendMessage = async function (prompt) {
 
     const tokens = tokenCount(prompt)
-    const MAX_TOKENS = 1500
+    const MAX_TOKENS = 2000
 
     const messages = [
         {

@@ -38,3 +38,9 @@ body{
     margin-bottom: 15px;
     color: #fff;
 }
+
+#update_date{
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
