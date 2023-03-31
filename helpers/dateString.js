@@ -12,7 +12,7 @@ export default function dateString(){
     }
 
     let h = ""+date.getHours()
-    if(month.length < 2){
+    if(h.length < 2){
         h = "0"+h
     }
 
